@@ -86,7 +86,7 @@ ENGINE=InnoDB
 
 CREATE TABLE `product` (
 	`prod_id` INT(10) NOT NULL AUTO_INCREMENT,
-	`prod_desc` INT(10) NOT NULL,
+	`prod_desc` VARCHAR(255) NOT NULL COLLATE 'utf8mb4_general_ci',
 	`prod_price` DECIMAL(65,0) NOT NULL,
 	`prod_name` VARCHAR(100) NOT NULL COLLATE 'utf8mb4_general_ci',
 	`brand_id` INT(10) NOT NULL,
